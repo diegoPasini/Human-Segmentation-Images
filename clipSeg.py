@@ -24,3 +24,4 @@ _, ax = plt.subplots(1, len(prompts) + 1, figsize=(3*(len(prompts) + 1), 4))
 ax[0].imshow(image)
 [ax[i+1].imshow(torch.sigmoid(preds[i][0])) for i in range(len(prompts))]
 [ax[i+1].text(0, -15, prompt) for i, prompt in enumerate(prompts)]
+print("Test")
